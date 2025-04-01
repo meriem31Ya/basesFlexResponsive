@@ -1,0 +1,28 @@
+/* Bloc parent contenant les éléments enfants */
+.parent {
+  width: 500px; /* Largeur fixe de 500px */
+  height: 500px; /* Hauteur fixe de 500px */
+  background-color: aquamarine; /* Couleur de fond du parent */
+}
+
+/* Style commun aux enfants */
+.child {
+  width: 150px; /* Largeur fixe pour tous les enfants */
+  height: 150px; /* Hauteur fixe pour tous les enfants */
+}
+
+/* Premier enfant avec positionnement relatif et z-index élevé */
+.child1 {
+  background-color: azure; /* Couleur de fond claire */
+  position: relative; /* Permet de manipuler top/left sans sortir du flux */
+  z-index: 5; /* Plus élevé que child2 → affiché au-dessus */
+}
+
+/* Deuxième enfant avec positionnement relatif et z-index plus bas */
+.child2 {
+  background-color: brown; /* Couleur de fond sombre */
+  z-index: 3; /* Plus bas que child1 → passe dessous */
+  position: relative; /* Nécessaire pour que z-index soit pris en compte */
+  top: -100px; /* Décalage vers le haut de 100px */
+  width: 50px; /* Largeur différente de l'autre enfant */
+}

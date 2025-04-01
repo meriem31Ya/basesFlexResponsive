@@ -1,0 +1,26 @@
+/* mobile L */
+/* @media (min-width: 480px) {
+    .wrapperCard {
+      justify-content: center;
+    }
+  } */
+/* tablet */
+@media (min-width: 768px) {
+  .card {
+    max-width: 100%;
+    flex-direction: row;
+  }
+  .card__body {
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    max-width: 380px;
+    flex-direction: column;
+  }
+  .card__body {
+    justify-content: center;
+  }
+}
